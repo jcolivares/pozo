@@ -5,21 +5,53 @@
     <meta charset="UTF-8">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página 2</title>
+    <style>
+        /*selector etiqueta*/
+        p {
+            color:blue;
+        }
+
+        /*Selector id*/
+        #titulo {
+            font-size: 48pt;
+        }
+
+        /*selector etiqueta combinado*/
+        pre, h2, h3 {
+            background-color: #FFFF00;
+        }
+        
+        /*selector de clase*/
+        .centrar{
+            text-align: center;
+        }
+
+        .rojo{
+            color: rgb(255, 0, 0);
+        }
+
+        /*selector combinado*/
+        article h3 {
+            border: 1px solid black;
+        }
+    </style>
+
 </head>
 <body>
     <header id="encabezado">
-        <h1>¿Qui&eacute;nes somo?</h1>
+        <h1 class="centrar">¿Qui&eacute;nes somo?</h1>
     </header>
     <section>
-        <h2>Contenido</h2>
+        <h2 class="centrar rojo">Contenido</h2>
+        <p class="rojo">Ejemplo de imagen</p>
         <a href="https://www.google.com/">
             <img src="img/pony.jpeg" alt="Viene el logo pony crush">
         </a>
         <!--(article#contenido$>h3+p)*3-->
         <article id="contenido1">
-            <h3>CSS</h3>
-            <p>El lenguaje de presentacion</p>
-            <p>Hojas de estilo en cascada</p>
+            <h3 class="rojo">CSS</h3>
+            <p id="titulo">El lenguaje de presentacion</p>
+            <p class="centrar">Hojas de estilo en cascada</p>
                 Otro texto <br>
                 <br>
             Siguiente texto

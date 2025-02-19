@@ -1,0 +1,39 @@
+* {
+    /*border: 1px solid black;
+    border-style: dotted;
+    border-color: blue;
+    border-width: 1px;*/
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+}
+
+
+#encabezado {
+    border: 5px dashed #0f0;
+    background: yellow;
+    /*padding-left: 30px;*/
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+
+h1{
+    color: rgba(255,0,0, 0.5);
+    text-align: center;
+    border-top: 1px dashed black;
+    border-left: 1px dashed black;
+    border-radius: 50px;
+}
+
+input[type="text"]{
+    border: 10px solid red;
+}
+
+#nombre:focus{
+    background-color: yellowgreen;
+    font-size: 2em;
+}
+
+textarea:hover{
+    background-color: blueviolet;
+}

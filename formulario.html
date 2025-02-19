@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/programa.js">
+    <!--
+    Tu navegador no soporta javascript
+-->
+    </script>
+    <script type="text/javascript">
+        function mensaje(){
+            /*
+            nombre = prompt("Dame tu nombre?")
+            window.alert("Hola "+nombre)
+            */
+            var num1 = prompt("Dame el primer numero?")
+            num1 = parseInt(num1)
+            let num2 = parseInt(window.prompt("Dame el segundo numero?"))
+            let res = num1+num2
+            alert("El resultado es: "+res)
+
+            if (num1>=18){
+                alert("Eres de mayor edad")
+            } else{
+                alert("Eres menor de edad")
+            }
+        }
+    </script>
+</head>
+<body>
+    <header id="encabezado">
+        <h1 onclick="mensaje()">Contacto</h1>
+        <hr>
+    </header>
+    <form action="archivo.php" method="get">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Pon tu nombre completo" size="80" maxlength="20" minlength="1" required>
+            <br>
+            <label for="fecha_nac">Fecha de nacimiento: </label>
+            <input type="date" name="fecha_nac" id="fecha_nac">
+            <div id="ctel">
+                <label for="telefono">telefono</label>
+                <input type="text" name="telefono" id="telefono" pattern="\([0-9]{3}\)-[0-9]{7}" required>
+            </div>
+            <div id="comentarios">
+                <label for="comentario">Comentarios:</label>
+                <textarea onblur="saludar()" name="comentario" id="comentario" cols="80" resizable="false"></textarea>
+            </div>
+            </fieldset>
+            <div id="csemestre">
+                <label for="semestre">Semestre:</label>
+                1<input type="range" name="semestre" id="semestre" min="1" max="12" step="2" value="12">12
+            </div>
+            <div id="ccarrera">
+                <label for="carrera">Carrera:</label>
+                <select name="carrera" id="carrera">
+                    <option value="1">MCIElectro</option>
+                    <option value="2">MCIElectrica</option>
+                    <option value="3">MC Metalurgia</option>
+                </select>
+            </div>
+            <input type="button" value="Boton" onclick="alert('hola mundo');console.log('hola mundo')">
+            <button type="submit">Enviar</button>
+            <input type="reset" value="Limpiar">
+    </form>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="¡CSS Válido!" />
+        </a>
+    </p>
+          
+</body>
+</html>

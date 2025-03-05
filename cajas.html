@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <!--
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+    -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/aslakr/core-styles/refs/heads/main/Modernist.css">
+    -->
+    <link rel="stylesheet" href="css/Modernist.css">
+    <style>
+        header, footer, nav, section, article {
+            border: 1px solid black;
+        }
+
+        #encabezado{
+            width: 80%;
+            height: 20%;
+            background-color: coral;
+        }
+
+        #menu {
+            width: 20%;
+            height: auto;
+            display: inline-block;
+            /*float: left;*/
+        }
+
+        #principal {
+            width: 70%;
+            height: 40%;
+            display: inline-block;
+            /*float: right;*/
+        }
+
+        #pie {
+            /*display: none;*/
+            position: absolute; /*fixed*/
+            top: 10%;
+            left: 10%;
+        }
+
+        #contenido2 {
+            position: relative;
+            top: 10%;
+            left: 30%;
+        }
+
+    </style>
+    
+    <script>
+        function cambiar(){
+            let nombre = prompt("Dame tu nombre?")
+            let pie = document.getElementById("pie");
+            //pie.innerText="Tu nombre es: "+nombre
+            pie.innerHTML="<p>Te llamas "+nombre+"</p>"
+            pie.style="color: red";
+        }
+    </script>
+</head>
+<body>
+    <header id="encabezado">
+        <h1 id="titulo">Ejemplo de posicionamiento de cajas</h1>
+        <img src="img/imagen.svg" alt="Imagen vectorial...">
+    </header>
+    <nav id="menu">
+        <p>Opcion 1</p>
+    </nav>
+    <section id="principal">
+        <article id="contenido1">
+            <h2 onclick="cambiar()">Contenido 1</h2>
+            <math>
+                <mrow>
+                 <mi>x</mi>
+                 <mo>=</mo>
+                 <mfrac>
+                   <mrow>
+                     <mrow>
+                       <mo>-</mo>
+                       <mi>b</mi>
+                     </mrow>
+                     <mo>±</mo>
+                     <msqrt>
+                       <mrow>
+                         <msup>
+                           <mi>b</mi>
+                           <mn>2</mn>
+                         </msup>
+                         <mo>-</mo>
+                         <mrow>
+                           <mn>4</mn>
+                           <mo>⁢</mo>
+                           <mi>a</mi>
+                           <mo>⁢</mo>
+                           <mi>c</mi>
+                         </mrow>
+                       </mrow>
+                     </msqrt>
+                   </mrow>
+                   <mrow>
+                     <mn>2</mn>
+                     <mo>⁢</mo>
+                     <mi>a</mi>
+                   </mrow>
+                 </mfrac>
+                </mrow>
+               </math>
+        </article>
+        <article id="contenido2">
+            <h2 id="c2">Otra cosa</h2>
+            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40" fill="#B0C4DE" />
+                <circle cx="50" cy="50" r="30" fill="#DDA0DD" />
+                <circle cx="50" cy="50" r="20" fill="#FFB6C1" />
+                <circle cx="50" cy="50" r="10" fill="#5F9EA0" />
+            </svg>
+        </article>
+    </section>
+    <footer id="pie">
+        <mark>En desarrollo</mark>
+    </footer>
+    <script src="js/programa.js"></script>
+</body>
+</html>

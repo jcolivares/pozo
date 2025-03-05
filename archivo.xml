@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<biblioteca>
+    <libros isbn="1">
+        <titulo>Como programar en Web</titulo>
+        <autor>Paul Deitel</autor>
+        <autor>Harvey Deitel</autor>
+        <editorial>Pearson</editorial>
+    </libros>
+    <libros isbn="2">
+        <titulo>El quijote...</titulo>
+    </libros>
+    <libros isbn="3">
+        <precio valor="123"/>
+    </libros>
+</biblioteca>

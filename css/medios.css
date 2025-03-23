@@ -1,0 +1,31 @@
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@media print{
+    input[type=range]{
+        display: none;
+    }
+
+    #titulo{
+        font-size: 3cm;
+        color: red;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    h1{
+        background-color: red;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        color: blue;
+    }
+}

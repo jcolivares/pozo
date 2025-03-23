@@ -6,10 +6,15 @@
     <title>Ejemplo de Jquery</title>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/procesar.js"></script>
+    <link rel="stylesheet" href="css/medios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="encabezado">
         <h1 id="titulo">Ejemplo de jQuery</h1>
+        <h2 id="subtitulo" class="oswald">Otro subtitulo</h2>
         <hr>
     </header>
     <main id="principal">
@@ -47,8 +52,29 @@
         <q id="p">Presioname</q>
         <span id="h20">H<sub>2O</sub></span>
         <form action="#" method="get">
+            <div id="email">
+                <label for="correo" class="oswald">Correo</label>
+                <input type="email" name="correo" id="correo" required>
+            </div>
+            <div id="contenedor">
+                <div id="colores">
+                    0<input type="range" name="r" id="r" min="0" max="255" value="0">255
+                    <br>
+                    0<input type="range" name="g" id="g" min="0" max="255" value="0">255
+                    <br>
+                    0<input type="range" name="b" id="b" min="0" max="255" value="0">255    
+                </div>
+                <div id="cuadro" style="background-color: black; width:300px; height: 300px;">
+
+                </div>
+            </div>
 
         </form>
+        <div id="bloque">
+            <blockquote id="x">
+
+            </blockquote>
+        </div>
     </main>
 </body>
 </html>
